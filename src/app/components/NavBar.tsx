@@ -1,5 +1,7 @@
-import { Car, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { useState } from "react";
+
+const logoImage = new URL("./figma/logo.jpeg", import.meta.url).href;
 
 const navLinks = [
   { label: "Проблема", id: "problem" },
@@ -30,9 +32,7 @@ export function NavBar() {
           className="flex items-center gap-2.5"
           style={{ background: "none", border: "none", cursor: "pointer" }}
         >
-          <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: "linear-gradient(135deg, #a855f7, #e879f9)" }}>
-            <Car size={16} style={{ color: "#fff" }} />
-          </div>
+          <img src={logoImage} alt="Logo" className="w-8 h-8 rounded-lg object-cover" />
           <span style={{ fontWeight: 900, fontSize: "1.15rem", background: "linear-gradient(135deg, #c084fc, #e879f9)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>
             EasyGO
           </span>

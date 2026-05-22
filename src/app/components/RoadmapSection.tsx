@@ -110,12 +110,6 @@ export function RoadmapSection() {
             ))}
           </div>
         </div>
-
-        {/* Status note */}
-        <div className="mt-12 text-center p-6 rounded-xl" style={{ background: "rgba(52,211,153,0.05)", border: "1px solid rgba(52,211,153,0.2)" }}>
-          <span style={{ color: "#34d399", fontWeight: 600 }}>✓ Исследование завершено · Рабочий прототип готов</span>
-          <span style={{ color: "#475569", marginLeft: "12px", fontSize: "0.9rem" }}>Команда уже протестировала основную концепцию с реальными пользователями в Бишкеке.</span>
-        </div>
       </div>
     </section>
   );
